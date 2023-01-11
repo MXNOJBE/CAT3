@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+       <form action="addemployee">
+   <h3>ADD EMPLOYEE</h3>
+   
+    <hr>
+    <label for="id"><b>Emp ID</b></label>
+    <input type="phone" placeholder="Enter ID" name="id" id="id" required>
+
+    <label for="name" ><b>Employee Name</b></label>
+    <input type="text" style = placeholder="Enter Name" name="name" id="name" required>
+
+
+    <label for="desig"><b>Employee Designation</b></label>
+    <input type="text" placeholder="Enter Designation" name="design" id="desig" required>
+
+    <label for="eml-dept"><b>Employee Department</b></label>
+    <input type="text" placeholder="Enter Department" name="dept" id="dept" required>
+   
+    <label for="sal"><b>Employee Salary</b></label>
+    <input type="text" placeholder="Enter Salary" name="salary" id="salary" required>
+    
+    <label for="loc"><b>Employee location</b></label>
+    <input type="text" placeholder="Enter location" name="location" id="location" required>
+
+  
+    <button type="submit" class="registerbtn">SUBMIT</button>
+
+  
+    <a href="./" style="color:black">BACK TO HOME PAGE</a> <br>
+     
+     {{#if mesg}}
+     <h3>Data Inserted</h3>
+     {{/if}}
+
+      {{#if checkmesg}}
+     <h3>id or name already present!</h3>
+     {{/if}}
+</form>
+</div>
+</body>
+</html>
